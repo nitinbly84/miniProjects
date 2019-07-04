@@ -22,6 +22,7 @@ public class Application {
 		data = me.readPersonTree("P3");
 		data.forEach(a -> System.out.println(a));
 
+		System.out.println("--------------------------------------------------");
 		familyId = me.createFamilyTree("Independent");
 		personId = me.addPerson("Individual");
 		me.createRelationship(RelationshipType.SELF, personId, null, familyId);
